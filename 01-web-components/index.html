@@ -7,23 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titulo da Pagina</title>
     <link rel="stylesheet" href="styles/card.css">
+    <script src="src/components/CardNews.js" defer></script>
+    <script src="src/components/TituloDinamico.js" defer></script>
 </head>
 
 <body>
     <div class="container">
-        <div class="card">
-            <div class="card__left">
-                <span>By Nome autor</span>
-                <a href="#">Titulo Da noticia</a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates similique fugit dolorum
-                    sequi sed ex excepturi.</p>
-            </div>
-            <div class="card__right">
-                <img src="assets/asset.png" alt="">
-            </div>
-        </div>
+        <card-news autor="Nome Autor" title="Titulo da Noticia" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates similique fugit dolorum
+    sequi sed ex excepturi." link-url="#" photo="assets/asset.png"></card-news>
     </div>
 
+    <div class="container">
+        <card-news title="Titulo da Noticia1" content="1Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates similique fugit dolorum
+    sequi sed ex excepturi." link-url="#"></card-news>
+    </div>
 </body>
 
 </html>
